@@ -1,0 +1,99 @@
+body {
+  background: #000;
+}
+
+/* 非表示 */
+.hide {
+  display: none !important;
+}
+
+.intro {
+  color: #1ac0ce;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 25%;
+}
+
+.title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 500px;
+  height: auto;
+  display: none;
+}
+
+.titleanimation {
+  display: block;
+  animation: titlescale ease 15s;
+}
+
+@-webkit-keyframes titlescale {
+	0% {
+    -webkit-transform: scale(3.0);
+  }
+  2% {
+    -webkit-transform: scale(2);
+  }
+	100% {
+    -webkit-transform: scale(0.01);
+  }
+}
+
+@keyframes titlescale {
+  0% {
+    -webkit-transform: scale(3.0);
+  }
+  2% {
+    -webkit-transform: scale(2);
+  }
+	100% {
+    -webkit-transform: scale(0.01);
+  }
+}
+
+.text{
+  color: #ffd527;
+  position: absolute;
+  width: 18em;
+  height: 50em;
+  bottom: 0;
+  left: 50%;
+  margin-left: -9em;
+  font-size: 350%;
+  font-weight: bold;
+  overflow: hidden;
+  transform-origin: 50% 100%;
+  transform: perspective(300px) rotateX(25deg);
+}
+.text:after {
+  position: absolute;
+  content: ' ';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 60%;
+}
+
+.textinner{
+  position: absolute;
+  top: 100%;
+}
+
+.textanimation {
+  -webkit-animation: scroll 100s linear 4s;
+	animation: scroll 100s linear 4s;
+}
+
+@-webkit-keyframes scroll {
+	0% { top: 100%; }
+	100% { top: -170%; }
+}
+
+@keyframes scroll {
+	0% { top: 100%; }
+	100% { top: -170%; }
+}
