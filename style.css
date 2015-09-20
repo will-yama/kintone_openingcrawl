@@ -2,7 +2,6 @@ body {
   background: #000;
 }
 
-/* 非表示 */
 .hide {
   display: none !important;
 }
@@ -69,7 +68,13 @@ body {
   font-size: 350%;
   font-weight: bold;
   overflow: hidden;
+  -webkit-transform-origin: 50% 100%;
+  -moz-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
   transform-origin: 50% 100%;
+  -webkit-ttransform: perspective(300px) rotateX(25deg);
+  -moz-transform: perspective(300px) rotateX(25deg);
+  -ms-transform: perspective(300px) rotateX(25deg);
   transform: perspective(300px) rotateX(25deg);
 }
 .text:after {
@@ -88,6 +93,8 @@ body {
 
 .textanimation {
   -webkit-animation: scroll 100s linear 4s;
+  -moz-animation: scroll 100s linear 4s;
+  -ms-animation: scroll 100s linear 4s;
 	animation: scroll 100s linear 4s;
 }
 
