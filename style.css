@@ -28,6 +28,9 @@ body {
 
 .titleanimation {
   display: block;
+  -webkit-animation: titlescale ease 15s;
+  -moz-animation: titlescale ease 15s;
+  -ms-animation: titlescale ease 15s;
   animation: titlescale ease 15s;
 }
 
@@ -45,13 +48,13 @@ body {
 
 @keyframes titlescale {
   0% {
-    -webkit-transform: scale(3.0);
+    transform: scale(3.0);
   }
   2% {
-    -webkit-transform: scale(2);
+    transform: scale(2);
   }
 	100% {
-    -webkit-transform: scale(0.01);
+    transform: scale(0.01);
   }
 }
 
