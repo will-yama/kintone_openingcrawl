@@ -1,0 +1,9 @@
+<p class="intro" style="color:#7edefe">A long Daily Report in a kintone far,<br>far away . . . .</p>
+<svg class="title">
+<text x="0" y="50px" font-size="65px" font-weight="bold" stroke="#febd34" stroke-width="2" fill="none" letter-spacing="15">Daily</text>
+<text x="0" y="110px" font-size="65px" font-weight="bold" stroke="#febd34" stroke-width="2" fill="none">Report</text>
+</svg>
+<div class="text">
+  <div class="textinner">
+  </div>
+</div>
