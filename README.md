@@ -14,6 +14,13 @@ After the upload, apply the changes to your app, and check your Custom View to s
 
 ##Dependancy
 This customization is dependant on jquery 2.1.4
+This customization only works for kintone with the new user interface design. It is not supported for the classic design.  
+To check if your kintone environment is running on the new user interface design, run  
+kintone.getUiVersion();  
+on your console. If it returns "1", you are using the classic design. If it returns "2", you are using the new interface design.
+
+##Warning
+Class names may change due to a kintone update, causing this customization to specify wrong class names. In that case, class names will need to be updated inside the code.
 
 ##Compatibility
 Windows Chrome
